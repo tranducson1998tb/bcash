@@ -1,0 +1,22 @@
+[Unit]
+Description=BCash's distributed currency daemon
+After=network.target
+
+[Service]
+User=bcashcore
+Group=bcashcore
+
+Type=forking
+PIDFile=/var/lib/bcashd/bcashd.pid
+ExecStart=/usr/bin/bcashd -daemon -pid=/var/lib/bcashd/bcashd.pid \
+-conf=/etc/bcashcore/bcash.conf -datadir=/var/lib/bcashd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

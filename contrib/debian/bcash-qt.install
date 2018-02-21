@@ -1,0 +1,6 @@
+usr/local/bin/bcash-qt usr/bin
+share/pixmaps/bcash32.xpm usr/share/pixmaps
+share/pixmaps/bcash16.xpm usr/share/pixmaps
+share/pixmaps/bcash128.png usr/share/pixmaps
+debian/bcash-qt.desktop usr/share/applications
+debian/bcash-qt.protocol usr/share/kde4/services/

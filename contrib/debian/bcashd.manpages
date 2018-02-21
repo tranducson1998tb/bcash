@@ -1,0 +1,3 @@
+debian/manpages/bcashd.1
+debian/manpages/bcash.conf.5
+debian/manpages/bcash-cli.1

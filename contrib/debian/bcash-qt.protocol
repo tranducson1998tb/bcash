@@ -1,0 +1,11 @@
+[Protocol]
+exec=bcash-qt '%u'
+protocol=bcash
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=BCash
+Comment=BCash P2P Cryptocurrency
+Comment[fr]=BCash, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=BCash, eşten eşe kriptografik sanal para birimi
+Exec=bcash-qt %u
+Terminal=false
+Type=Application
+Icon=bcash128
+MimeType=x-scheme-handler/bcash;
+Categories=Office;Finance;

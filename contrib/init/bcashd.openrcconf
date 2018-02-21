@@ -1,0 +1,33 @@
+# /etc/conf.d/bcashd: config file for /etc/init.d/bcashd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/bcashcore/bcash.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/bcashd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/bcashd.pid"
+
+# Where to write bcashd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/bcashd"
+
+# User and group to own bcashd process
+#BITCOIND_USER="bcashcore"
+#BITCOIND_GROUP="bcashcore"
+
+# Path to bcashd executable
+#BITCOIND_BIN="/usr/bin/bcashd"
+
+# Nice value to run bcashd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS="-disablewallet"
+
+# The timeout in seconds OpenRC will wait for bitcoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+BITCOIND_SIGTERM_TIMEOUT=60
