@@ -137,10 +137,10 @@ public:
         nDelayGetHeadersTime = 24 * 60 * 60;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1519344000, 179477, 0x1e0ffff0, 1, 20 * COIN);
+        genesis = CreateGenesisBlock(1519344000, 1321675, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-		assert(consensus.hashGenesisBlock == uint256S("0x0000047e568a264950ba28bc1a8ee73fb56ad8f92aa899cd4ff261aec2de9962"));
-        assert(genesis.hashMerkleRoot == uint256S("0x681f0c1ca8d60ae795257863aab356c505191e4e35aae3f4c5916ec6ee0abeb1"));
+		assert(consensus.hashGenesisBlock == uint256S("0x000002320db441472782a6e357c77a614eb1df4828433804073a404cb66d20cb"));
+        assert(genesis.hashMerkleRoot == uint256S("0xb033fee3e137b49c2573889fef4bea46f01935e8ad1cb7c9da9940b3774e60ea"));
 
 
         vSeeds.push_back(CDNSSeedData("node1.bcashpay.org", "node1.bcashpay.org"));
@@ -181,7 +181,7 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            (  0, uint256S("0x0000047e568a264950ba28bc1a8ee73fb56ad8f92aa899cd4ff261aec2de9962"))
+            (  0, uint256S("0x000002320db441472782a6e357c77a614eb1df4828433804073a404cb66d20cb"))
             //(  2, uint256S("0x000000edde11b3a88b0854907f4c60acb39fbd4c83c23bd527a46d39165b3b44"))
             //(  60, uint256S("0x000003b6ed6527c8a923baa313bea5d29260e60b77b509163e37c9710bd8a87a"))
             // ( 16912, uint256S("0x00000000075c0d10371d55a60634da70f197548dbbfa4123e12abfcbc5738af9"))
