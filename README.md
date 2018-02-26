@@ -4,7 +4,7 @@ BCash staging tree 0.12.2
 What is BCash?
 ----------------
 
-BCash is a decentralized ecosystem in the gaming and casino industry. BCash connects the Contributors, Game Developers, Game player, casino through a rich API for connection and billing, and a trading platform that allows you to pay and convert any bets in all games to create an environment. favorable for the industry worth $ 91 billion strong development. Increased transparency and convenience for users.
+BCash is a decentralized ecosystem in financial.
 
 For more information, as well as an immediately useable, binary version of
 the BCash software, see https://www.bcashpay.org/.
