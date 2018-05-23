@@ -1235,7 +1235,10 @@ CAmount GetBlockSubsidy(int nPrevBits, int nPrevHeight, const Consensus::Params&
 	{
 		return 10000000 * COIN; 
 	}
-	
+	if(nPrevHeight == 59999)
+	{
+		return 9800000 * COIN; 
+	}
 	CAmount nSubsidy = 20 * COIN;
 
 	// yearly decline of production by 10% per year
